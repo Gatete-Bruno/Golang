@@ -4,9 +4,16 @@ import "fmt"
 
 func main() {
 	ages := map[string]int{}
-	ages["Kevin"] = 61
+	ages["Kevin"] = 77
 
-	if ages["Kevin"] < 67 {
-		fmt.Println("Kevin is not of retirement age just yet")
+	if ages["Kevin"] < 18 {
+		fmt.Println("Kevin can not Vote")
+
+	} else if ages["Kevin"] < 67 {
+
+		fmt.Println("Kevin is not yet retired")
+
+	} else {
+		fmt.Println("Enjoy your retirement Kev")
 	}
 }
